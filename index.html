@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/webcam_icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNO - WebRTC</title>
+    
+  </head>
+  <body>
+    <div class="videos">
+      <span>
+        <h3>Vos</h3>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <h3>Persona</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+    <button id="webcamButton">Iniciar webcam</button>
+ 
+      <h2>Crear sala</h2>
+      <input id="callInput" />
+    <button id="callButton" disabled>Crear</button>
+    
+    <h2>Unirse a llamada</h2>
+    
+    <button id="answerButton" disabled>Unirse</button>
+    <button id="hangupButton" disabled>Finalizar llamada</button>
+    <!-- Agregar antes de tu script principal -->
+   
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>

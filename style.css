@@ -1,0 +1,48 @@
+
+
+body {
+  font-family: 'Syne Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #006769;
+  margin: 40px 10px;
+}
+
+video {
+  width: 40vw;
+  height: 30vw;
+  margin: 1rem;
+  background: #006769;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#webcamButton, #callButton, #answerButton, #hangupButton {
+  display: inline-block;
+  background-color: #40A578;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#webcamButton:hover, #callButton:hover, #answerButton:hover, #hangupButton:hover {
+  background-color: #0056b3;
+}
+
+
+.join_meeting{
+  position: fixed;
+  top: 5px;
+  transform: translateX(100%);
+  display: flex;
+  gap: 20px;
+}
